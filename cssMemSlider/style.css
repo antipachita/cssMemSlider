@@ -109,23 +109,23 @@ label, a{
 
 /* Анимация текста */
 
-#switch1:checked ~ .lol .description .overflow-description{
+#switch1:checked ~ .control-section .description .overflow-description{
 	margin-left: 0;
 }
 
-#switch2:checked ~ .lol .description .overflow-description{
+#switch2:checked ~ .control-section .description .overflow-description{
 	margin-left: -100%;
 }
 
-#switch3:checked ~ .lol .description .overflow-description{
+#switch3:checked ~ .control-section .description .overflow-description{
 	margin-left: -200%;
 }
 
-#switch4:checked ~ .lol .description .overflow-description{
+#switch4:checked ~ .control-section .description .overflow-description{
 	margin-left: -300%;
 }
 
-#switch5:checked ~ .lol .description .overflow-description{
+#switch5:checked ~ .control-section .description .overflow-description{
 	margin-left: -400%;
 }
 
@@ -155,11 +155,11 @@ label, a{
 }
 
 
-#switch1:checked ~ .lol #active label:nth-child(1),
-#switch2:checked ~ .lol #active label:nth-child(2),
-#switch3:checked ~ .lol #active label:nth-child(3),
-#switch4:checked ~ .lol #active label:nth-child(4),
-#switch5:checked ~ .lol #active label:nth-child(5){
+#switch1:checked ~ .control-section #active label:nth-child(1),
+#switch2:checked ~ .control-section #active label:nth-child(2),
+#switch3:checked ~ .control-section #active label:nth-child(3),
+#switch4:checked ~ .control-section #active label:nth-child(4),
+#switch5:checked ~ .control-section #active label:nth-child(5){
 	background: #18a3dd;
 	border-radius: 50%;
 	border: 0.6em antiquewhite solid;
@@ -181,7 +181,7 @@ label, a{
 }
 
 
-.lol {
+.control-section {
 	margin-top: 3%;
 	display: flex;
 	flex-direction: row;
@@ -192,7 +192,7 @@ label, a{
 /* адаптив */
 
 @media (max-width: 830px) { 
-	.lol {
+	.control-section {
 		flex-direction: column;
 	}
 
