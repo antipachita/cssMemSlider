@@ -31,61 +31,61 @@ div span {
 	width: 100%;
 }
 
-#desktop:checked ~ .description{ /*размер всего слайдера*/
-	max-width: 76%; /*максимальнная длинна*/
+#desktop:checked ~ .description{ 
+	max-width: 76%; 
 }
 
 
 
 
-#slider { /*положение слайдера*/
+#slider { 
     position: relative;
 	text-align: center;
 }
 
-#slider{ /*центровка слайдера*/
+#slider{ 
 	margin: 0 auto;
 }
 
-#slides article{ /*все изображения справа друг от доруга*/
+#slides article{ 
 	width: 20%;
 	float: left;
 }
 
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
+#slides .image{
 	width: 500%;
 	line-height: 0;
 }
 
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
+#overflow{ 
 	width: 100%;
 	overflow: hidden;
 }
 
-article img{ /*размер изображений слайдера*/
+article img{ 
 	width: 100%;
 	
 }
 
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 76%; /*максимальнная длинна*/
+#desktop:checked ~ #slider{ 
+	max-width: 76%; 
 }
 
 
 
 
 
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+label, a{ 
 	cursor: pointer;
 }
 
 
 
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+.all input{ 
 	display: none;
 }
 
-/*позиция изображения при активации переключателя*/
+
 #switch1:checked ~  #slides .image{
 	margin-left: 0;
 }
@@ -132,9 +132,9 @@ label, a{ /*при наведении на стрелки или переклю�
 
 
 
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 0.6em; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
+#active label{ 
+	border-radius: 0.6em; 
+	display: inline-block; 
 	width: 0.9em;
 	height: 0.9em;
 	background: #bbb;
@@ -142,19 +142,19 @@ label, a{ /*при наведении на стрелки или переклю�
 	border: 0.6em antiquewhite solid;
 }
 
-#active{ /*расположение блока с переключателями*/
+#active{ 
 	width: 30%;
 	text-align: center;
 	order: 2;
 }
 
-#active label:hover{ /*поведение чекбокса при наведении*/
+#active label:hover{ 
 	background: #76c8ff;
 	border-radius: 50%;
 	border: 0.6em antiquewhite solid;
 }
 
-/*цвет активного лейбла при активации чекбокса*/
+
 #switch1:checked ~ .lol #active label:nth-child(1),
 #switch2:checked ~ .lol #active label:nth-child(2),
 #switch3:checked ~ .lol #active label:nth-child(3),
@@ -172,7 +172,7 @@ label, a{ /*при наведении на стрелки или переклю�
 
 
 
-#slides .image{ /*анимация пролистывания изображений*/
+#slides .image{ 
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
